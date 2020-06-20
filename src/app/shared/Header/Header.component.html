@@ -1,0 +1,11 @@
+<div class="w-100 d-flex header-style justify-content-between">
+  <div class="d-flex align-items-center">
+    <img src="../../../assets/restaurant_menu-24px.svg" class="icon" />
+    <h6 class="header-Text pl-3">receipe box</h6>
+  </div>
+  <div class="d-flex align-items-center" *ngIf="!nullHeader">
+    <button type="button" (click)="redirect()">{{ userOpt }}</button>
+    <img src="{{ viewIcon }}" class="menu-icon icon" (click)="viewHandler()" />
+    <button type="button" (click)="open()" *ngIf='addOption'>add recipe</button>
+  </div>
+</div>

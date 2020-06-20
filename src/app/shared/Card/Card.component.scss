@@ -1,0 +1,22 @@
+.card-Wrapper {
+    width: 32%;
+    padding: 30px;
+    border: 1px solid grey;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    .img-Container {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+    }
+    .card-Text {
+      margin-top: 20px;
+    }
+  }
+  .card-Wrapper:nth-child(n + 4) {
+    margin-top: 20px;
+  }

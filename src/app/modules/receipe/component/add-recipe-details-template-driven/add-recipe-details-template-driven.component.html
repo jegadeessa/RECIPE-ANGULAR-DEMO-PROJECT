@@ -1,0 +1,46 @@
+<div class="popup-Container">
+  <div class="d-flex w-100 justify-content-between">
+    <h6>Add new recipe</h6>
+  </div>
+  <form #addRecipe="ngForm" class="addForm" (submit)="addHandler()" autocomplete="off">
+    <input
+      type="text"
+      [(ngModel)]="recipe.name"
+      name="name"
+      placeholder="recipe title"
+      required
+      #name="ngModel"
+    />
+    <span class="error" *ngIf="name.errors && name.touched">Please fill this mandatory field</span>
+    <input
+      type="text"
+      [(ngModel)]="recipe.recipeSource"
+      name="recipeSource"
+      placeholder="recipe source"
+      required
+      #source="ngModel"
+    />
+    <span class="error" *ngIf="source.errors && source.touched">Please fill this mandatory field</span>
+    <input
+      type="text"
+      [(ngModel)]="recipe.recipeImage"
+      name="recipeImage"
+      placeholder="recipe picture"
+      required
+      #image="ngModel"
+    />
+    <span class="error" *ngIf="image.errors && image.touched">Please fill this mandatory field</span>
+    <input
+      type="text"
+      [(ngModel)]="recipe.Ingradients"
+      name="Ingradients"
+      placeholder="enter ingradients, separated by a comma"
+      required
+      #ingradients="ngModel"
+    />
+    <span class="error" *ngIf="ingradients.errors && ingradients.touched">Please fill this mandatory field</span>
+    <button [disabled]="addRecipe.invalid" type="submit" class="w-100 mt-4">
+      add
+    </button>
+  </form>
+</div>

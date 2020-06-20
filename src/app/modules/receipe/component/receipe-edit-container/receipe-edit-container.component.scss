@@ -1,0 +1,38 @@
+form {
+  width: 100%;
+  margin: 20px 0;
+
+  label {
+    width: 100%;
+
+    input {
+      display: block;
+      width: 100%;
+      border: 1px solid grey;
+      outline: none;
+      margin-top: 5px;
+      padding: 0 10px;
+    }
+  }
+
+  button {
+    display: block;
+  }
+
+}
+
+.details-Wrapper{
+  border: 1px solid grey;
+  display:flex;
+  padding: 30px;
+  margin: 10px auto;
+  height:600px;
+}
+
+.img-Wrapper {
+  width: 50%;
+
+  img {
+    height: 80%;
+  }
+}

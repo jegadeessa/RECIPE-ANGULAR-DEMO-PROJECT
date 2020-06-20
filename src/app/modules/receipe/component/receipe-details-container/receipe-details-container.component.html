@@ -1,0 +1,11 @@
+<header>
+    <app-Header [nullHeader]="'true'"></app-Header>
+</header>
+<section>
+    <div *ngIf="!edit">
+        <app-receipe-selected-details [selectedRecipe]='store?.selectedRecipeData | async' (userChoice)="onSelect($event)"></app-receipe-selected-details>
+    </div>
+    <div *ngIf="edit">
+        <app-receipe-edit-container [recipe] = 'store?.selectedRecipeData | async' (editedRecipe)="updatedDetails($event)"></app-receipe-edit-container>
+    </div>
+</section>

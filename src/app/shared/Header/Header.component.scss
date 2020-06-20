@@ -1,0 +1,17 @@
+.header-style {
+    background-color: green;
+    height: 100px;
+    padding: 30px;
+    .icon {
+      width: 30px;
+      height: 30px;
+    }
+    .header-Text {
+      color: #ffffff;
+      font-size: 30px;
+    }
+    .menu-icon{
+        margin: 0 20px;
+        cursor: pointer;
+    }
+  }

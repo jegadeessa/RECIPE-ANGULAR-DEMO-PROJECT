@@ -1,0 +1,27 @@
+<div class="popup-Container">
+  <div class="d-flex w-100 justify-content-between">
+    <h6>Add new recipe</h6>
+  </div>
+  <form [formGroup]="addRecipe" class="addForm" (submit)="addHandler()">
+    <div>
+      <input type="text" formControlName="name" placeholder="recipe title"/>
+      <span class="error" *ngIf="addRecipe.get('name').errors && addRecipe.get('name').touched">Please fill this mandatory field</span>
+    </div>
+    <div>
+      <input type="text" formControlName="recipeSource" placeholder="recipe source"/>
+      <span class="error" *ngIf="addRecipe.get('recipeSource').errors && addRecipe.get('recipeSource').touched">Please fill this mandatory field</span>
+    </div>
+    <div>
+      <input type="text" formControlName="recipeImage" placeholder="recipe picture"/>
+      <span class="error" *ngIf="addRecipe.get('recipeImage').errors && addRecipe.get('recipeImage').touched">Please fill this mandatory field</span>
+    </div>
+    <div>
+      <input type="text" formControlName="Ingradients" placeholder="enter ingradients, separated by a comma"/>
+      <span class="error" *ngIf="addRecipe.get('Ingradients').errors && addRecipe.get('Ingradients').touched">Please fill this mandatory field</span>
+    </div>
+    <button [disabled]="!addRecipe.valid" type="submit" class="w-100 mt-4">
+      add
+    </button>
+  </form>
+  
+</div>

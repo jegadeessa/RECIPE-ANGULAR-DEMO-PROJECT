@@ -1,0 +1,84 @@
+{
+  "recipe": [
+    {
+      "id": 1,
+      "name": "Slow-Roast Gochujang Chicken",
+      "Ingradients": [
+        "whole chickens",
+        "Diamond Crystal",
+        "Morton kosher salt",
+        "Freshly ground black pepper",
+        "gochujang (Korean hot pepper paste)",
+        "extra-virgin olive oil"
+      ],
+      "recipeImage": "https://assets.bonappetit.com/photos/5d7296eec4af4d0008ad1263/16:9/w_1200,c_limit/Basically-Gojuchang-Chicken-Recipe-Wide.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Easy Sheet Pan Chicken Nachos",
+      "Ingradients": [
+        "unsalted butter",
+        "powdered sugar",
+        "heavy whipping cream",
+        "vanilla extract",
+        "pinch of salt (adjust to taste)"
+      ],
+      "recipeImage": "https://i2.wp.com/www.livewellbakeoften.com/wp-content/uploads/2017/01/How-To-Make-Buttercream-Frosting-10.jpg?resize=1360%2C2040&ssl=1"
+    },
+    {
+      "id": 3,
+      "name": "Tangy Skillet Chicken",
+      "Ingradients": [
+        "extra-virgin olive oil",
+        "fresh or bottled garlic",
+        "Meyer lemon juice",
+        "water",
+        "skinless chicken breast halves"
+      ],
+      "recipeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTL99Fdxg5rfbJDvQ645TiQtWLOf5_ntdeNo6Vw602Wh5sPyyz4&usqp=CAU"
+    },
+    {
+      "id": 311.7987196410441,
+      "name": "Butter",
+      "recipeImage": "https://144f2a3a2f948f23fc61-ca525f0a2beaec3e91ca498facd51f15.ssl.cf3.rackcdn.com/uploads/food_portal_data/recipes/recipe/hero_article_image/4101/f820f5da8808ff670e20/letterbox_ToffeeAppleCrumbleCheeseCake_103887.jpg",
+      "Ingradients": [
+        "Butter",
+        "Milk"
+      ]
+    },
+    {
+      "id": 394.87121944918925,
+      "name": "South Indian Chicken Noodles",
+      "Ingradients": [
+        "Chicken",
+        "Masala Powder",
+        "Water",
+        "Oil"
+      ],
+      "recipeImage": "https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/exps108597_SD163324B08_06_4b.jpg"
+    }
+  ],
+  "shop": [
+    {
+      "id": 1,
+      "name": "Meatball Recipe",
+      "recipeImage": "https://www.cookingclassy.com/wp-content/uploads/2019/09/meatballs-21.jpg",
+      "price": 500,
+      "quantityAdded": null
+    },
+    {
+      "id": 2,
+      "name": "Easy Sheet Pan Chicken Nachos",
+      "recipeImage": "https://tmbidigitalassetsazure.blob.core.windows.net/secure/RMS/attachments/37/1200x1200/exps108597_SD163324B08_06_4b.jpg",
+      "price": 1500,
+      "quantityAdded": null
+    },
+    {
+      "id": 3,
+      "name": "Perfect Homemade Biscuits",
+      "recipeImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRBwMLtdJKwWE4yUDVQ02nz77GzlbMjvFyRyqtI9_u6DYaJNtWl&usqp=CAU",
+      "price": 3000,
+      "quantityAdded": null
+    }
+  ]
+}

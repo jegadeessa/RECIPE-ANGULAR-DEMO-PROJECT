@@ -1,0 +1,21 @@
+<header>
+  <app-Header
+    [nullHeader]="'false'"
+  ></app-Header>
+</header>
+<section class="shop-Wrapper-Cont Container">
+  <div class="my-3 d-flex align-items-center">
+    <button class="btn m-3" [routerLink]="['../../shop']">Back</button>
+    <span class="ml-auto"
+      >Total Amount : {{ store?.shopCart | billCalculator | priceFormat }}</span
+    >
+  </div>
+  <div>
+    <div class="card-Container">
+      <app-Card
+        [listData]="store?.shopCartData | async"
+        [isCart]="'true'"
+      ></app-Card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,21 @@
+.popup-Container {
+    width: 500px;
+    padding: 0 30px;
+    margin: 50px auto;
+    span{
+        cursor: pointer;
+    }
+    .addForm{
+        display: flex;
+        flex-direction: column;
+        input{
+            width:100%;
+            outline: none;
+            border: 1px solid grey;
+            margin-top: 20px;
+            color:#000000;
+            padding: 5px 5px;
+            font-size: 10px;
+        }
+    }
+  }

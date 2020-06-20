@@ -1,0 +1,17 @@
+<header>
+    <app-Header [nullHeader]="'true'"></app-Header>
+</header>
+<section class="Container details-Wrapper">
+    <div class="img-Wrapper w-50">
+        <img src={{selectedRecipe?.recipeImage}} alt="" class="w-100">
+    </div>
+    <div class="w-50 ml-4 my-5">
+        <h6>{{selectedRecipe?.name}}</h6>
+        <button type="button" class="my-4" (click)="addToCart(selectedRecipe)">Add to Cart</button>
+        <span class="d-block">{{selectedRecipe?.price | priceFormat}}</span>
+        <label class="mt-4">
+            Quantity
+            <input type="number" placeholder="Enter Quantity" [(ngModel)]="quantityAdded">
+        </label>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+<section class="Container details-Wrapper">
+  <div class="img-Wrapper">
+    <img src={{recipe?.recipeImage}} alt="" class="w-100" />
+  </div>
+  <div class="w-50 ml-4">
+    <h6>Edit {{ recipe.name }}</h6>
+    <form [formGroup]="editForm" (submit)="editedDetails()">
+      <label>
+        New Name
+        <input type="text" formControlName="name" />
+      </label>
+      <label>
+        New Ingradients
+        <input type="text" formControlName="Ingradients" />
+      </label>
+      <label>
+        New Image URL
+        <input type="text" formControlName="recipeImage" />
+      </label>
+      <button type="submit" [disabled]="!editForm.valid" class="mt-3">
+        submit Changes
+      </button>
+    </form>
+  </div>
+</section>

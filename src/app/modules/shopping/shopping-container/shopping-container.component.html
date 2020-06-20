@@ -1,0 +1,16 @@
+<header>
+    <app-Header (selectedView)='viewIconHandler($event)' [userOpt]="'receipe'"></app-Header>
+</header>
+<section class="shop-Wrapper-Cont Container">
+  <div class="card-Container" *ngIf="!listView">
+    <app-Card [listData]='store?.shopListData | async' (selectedrecipe) = onSelectRecipe($event) ></app-Card>
+  </div>
+  <div class="list-Container" *ngIf="listView">
+    <app-List [listData]='store?.shopListData | async' (selectedrecipe) = onSelectRecipe($event)></app-List>
+  </div>
+  <div class="btn-container">
+    <button class="btn" (click)="showCart()">Cart ({{store.shopCart.length}})</button>
+  </div>
+</section>
+
+

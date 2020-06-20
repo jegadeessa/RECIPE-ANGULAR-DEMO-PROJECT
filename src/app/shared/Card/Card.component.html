@@ -1,0 +1,14 @@
+<section class="d-flex flex-wrap justify-content-between w-100">
+  <div class="card-Wrapper"  *ngFor="let receipe of listData" (click)="onSelect(receipe)">
+    <div class="img-Container">
+      <img src={{receipe.recipeImage}} alt="" class="w-100"/>
+    </div>
+    <p class="card-Text">
+      {{receipe.name}}
+    </p>
+    <div *ngIf="isCart">
+      <span class="d-inline-block mb-2">Quantity : {{receipe?.quantity}}</span>
+      <span class="d-block">Price : {{receipe?.price}}</span>
+    </div>
+  </div>
+</section>

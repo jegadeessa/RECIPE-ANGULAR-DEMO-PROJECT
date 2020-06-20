@@ -1,0 +1,22 @@
+<section class="Container details-Wrapper">
+  <div class="img-Wrapper">
+    <img src={{selectedRecipe?.recipeImage}} alt="" class="w-100" />
+  </div>
+  <div class="w-50 ml-4">
+    <h6>{{ selectedRecipe?.name }}</h6>
+    <div class="d-flex w-50 justify-content-between my-4">
+      <button type="button">source</button>
+      <button type="button" (click)="editOption('edit')">edit</button>
+      <button type="button" (click)="editOption('delete')">delete</button>
+    </div>
+    <div>
+      <h6>Ingradients</h6>
+      <ul
+        class="ingradient-Container"
+        *ngFor="let ingradient of selectedRecipe?.Ingradients"
+      >
+        <li>{{ ingradient }}</li>
+      </ul>
+    </div>
+  </div>
+</section>

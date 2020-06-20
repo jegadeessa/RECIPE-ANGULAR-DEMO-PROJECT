@@ -1,0 +1,12 @@
+<header>
+  <app-Header
+    (selectedView)="viewIconHandler($event)"
+    (addedRecipe)="addRecipe($event)"
+    [userOpt]="'shop'"
+  ></app-Header>
+</header>
+<section class="full-Width-Container Container">
+  <app-receipe-view-container
+    [listView]="listView"
+  ></app-receipe-view-container>
+</section>

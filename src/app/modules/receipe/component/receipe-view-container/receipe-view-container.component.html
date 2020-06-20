@@ -1,0 +1,8 @@
+<section>
+  <div *ngIf="!listView">
+    <app-Card [listData]="store?.recipeListData | async" (selectedrecipe)="selectedRecipe($event)"></app-Card>
+  </div>
+  <div *ngIf="listView">
+    <app-List [listData]="store?.recipeListData | async" (selectedrecipe)="selectedRecipe($event)"></app-List>
+  </div>
+</section>
